@@ -11,7 +11,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Workers.BL.Interfaces;
+using Workers.BL.Services;
 using Workers.Shared.Data.Contexts;
+using Workers.Shared.Data.Interfaces;
+using Workers.Shared.Data.Models;
+using Workers.Shared.Data.Repositories;
 
 namespace Workers
 {
@@ -29,6 +34,11 @@ namespace Workers
         {
             services.AddDbContext<CompanyContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("CompanyConnection")));
+
+            services.AddScoped<IWorkersInCompanyService, WorkersInCompanyService>();
+
+            services.AddScoped<IWorkersInCompanyRepository, WorkersInCompanyRepository>();
+
             services.AddControllers();
         }
 

@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace Workers.ViewModels
+namespace Workers.BL.Models
 {
-    public class WorkerViewModel
+    public class WorkerDTO
     {
-        public string Surname { get; set; }
         public string Name { get; set; }
+
+        public string Surname { get; set; }
 
         public string Patronymic { get; set; }
 
