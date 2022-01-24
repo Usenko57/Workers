@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Workers.Shared.Migrations
+namespace Workers.Shared.Data.Migrations
 {
     public partial class createTable : Migration
     {

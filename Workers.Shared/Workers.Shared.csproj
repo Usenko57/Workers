@@ -5,10 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20220124183753_create-table.cs" />
-    <Compile Remove="Migrations\20220124183753_create-table.Designer.cs" />
-    <Compile Remove="Migrations\20220124202241_removeKeyOption.cs" />
-    <Compile Remove="Migrations\20220124202241_removeKeyOption.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220124183753_create-table.cs" />
+    <Compile Remove="Data\Migrations\20220124183753_create-table.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220124202241_removeKeyOption.cs" />
+    <Compile Remove="Data\Migrations\20220124202241_removeKeyOption.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

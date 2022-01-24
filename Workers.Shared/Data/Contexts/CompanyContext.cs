@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Workers.Shared.Data;
+using Workers.Shared.Data.Models;
 
-namespace Workers.Shared.Contexts
+namespace Workers.Shared.Data.Contexts
 {
     public class CompanyContext : DbContext
     {

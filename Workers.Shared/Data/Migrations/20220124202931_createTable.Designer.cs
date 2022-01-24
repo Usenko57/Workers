@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Workers.Shared.Contexts;
+using Workers.Shared.Data.Contexts;
 
-namespace Workers.Shared.Migrations
+namespace Workers.Shared.Data.Migrations
 {
     [DbContext(typeof(CompanyContext))]
     [Migration("20220124202931_createTable")]

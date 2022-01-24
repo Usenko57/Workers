@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Workers.Shared.Data
+namespace Workers.Shared.Data.Models
 {
     public class Worker
     {
