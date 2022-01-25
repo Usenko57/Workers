@@ -11,7 +11,7 @@ using Workers.ViewModels;
 namespace Workers.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WorkersController : ControllerBase
     {
         private readonly IWorkersInCompanyService _workersInCompanyService;
@@ -58,7 +58,7 @@ namespace Workers.Controllers
 
             if(result == 0)
             {
-                throw new Exception("Пользователь с таким именем уже иммется");
+                return BadRequest("Пользователь с таким именем уже иммется");
             }
 
             return Ok();
